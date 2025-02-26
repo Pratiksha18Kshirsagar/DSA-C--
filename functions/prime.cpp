@@ -1,14 +1,11 @@
 #include <iostream>
 using namespace std;
-int main()
+int primeOrNot(int n)
 {
-    int num;
-    cout << "Enter num : ";
-    cin >> num;
     bool isPrime = true;
-    for (int i = 2; i < num; i++)
+    for (int i = 2; i < n; i++)
     {
-        if (num % i == 0)
+        if (n % i == 0)
         {
             isPrime = false;
             break;
@@ -16,11 +13,17 @@ int main()
     }
     if (isPrime)
     {
-        cout << "Prime";
+        cout << "prime";
     }
     else
     {
-        cout << "Not prime";
+        cout << "not prime";
     }
+}
+
+int main()
+{
+    primeOrNot(15);
+
     return 0;
 }
