@@ -23,17 +23,20 @@ bool primeOrNot(int n)
         return isPrime;
     }
 }
-int collectPrime(int m){
-    for (int i = 1; i <= m ; i++)
+int collectPrime(int x)
+{
+    x = 10;
+    for (int i = 1; i <= x; i++)
     {
-        if(primeOrNot(i)){
-            cout<< i <<endl;
+        if (primeOrNot(i))
+        {
+            cout << i << endl;
         }
     }
-    
 }
 int main()
 {
-collectPrime(7);
+    int x = 9;
+    collectPrime(x);
     return 0;
 }
