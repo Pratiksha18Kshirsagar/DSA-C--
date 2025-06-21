@@ -1,11 +1,12 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int linearSearch(int arr[], int target)
+int linearSearch(vector<int>&nums, int target)
 {
     for (int i = 0; i < 5; i++)
     {
-        if (target == arr[i])
+        if (target == nums[i])
         {
             return i;
         }
@@ -15,13 +16,9 @@ int linearSearch(int arr[], int target)
 
 int main()
 {
-    int arr[5] = {1, 2, 3, 4, 5};
+    vector<int>nums = {1,2,3,4,5};
 
-    int ans = linearSearch(arr, 3);
+    int ans = linearSearch(nums, 3);
     cout << ans;
     return 0;
 }
-
-
-
-

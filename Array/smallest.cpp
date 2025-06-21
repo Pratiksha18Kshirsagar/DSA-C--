@@ -19,7 +19,7 @@ int smallestNum()
             smallest = arr[i];
         }
     }
-    cout << "Smallest num is :" << smallest;
+    cout << "Smallest num is :" << smallest<<"/n";
 }
 
 int largestNum()
